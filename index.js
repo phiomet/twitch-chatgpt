@@ -21,14 +21,14 @@ app.set('view engine', 'ejs');
 const GPT_MODE = process.env.GPT_MODE || 'CHAT';
 const HISTORY_LENGTH = process.env.HISTORY_LENGTH || 5;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
-const MODEL_NAME = process.env.MODEL_NAME || 'gpt-3.5-turbo';
-const TWITCH_USER = process.env.TWITCH_USER || 'oSetinhasBot';
-const TWITCH_AUTH = process.env.TWITCH_AUTH || 'oauth:vgvx55j6qzz1lkt3cwggxki1lv53c2';
-const COMMAND_NAME = process.env.COMMAND_NAME || '!gpt';
-const CHANNELS = process.env.CHANNELS || 'oSetinhas,jones88';
+const MODEL_NAME = process.env.MODEL_NAME || 'gpt-4.1-mini';
+const TWITCH_USER = process.env.TWITCH_USER || 'phiomet';
+const TWITCH_AUTH = process.env.TWITCH_AUTH || 'oauth:';
+const COMMAND_NAME = process.env.COMMAND_NAME || '!gpt, !bot';
+const CHANNELS = process.env.CHANNELS || 'phiometsAI';
 const SEND_USERNAME = process.env.SEND_USERNAME || 'true';
 const ENABLE_TTS = process.env.ENABLE_TTS || 'false';
-const ENABLE_CHANNEL_POINTS = process.env.ENABLE_CHANNEL_POINTS || 'false';
+const ENABLE_CHANNEL_POINTS = process.env.ENABLE_CHANNEL_POINTS || 'true';
 const COOLDOWN_DURATION = parseInt(process.env.COOLDOWN_DURATION, 10) || 10; // Cooldown duration in seconds
 
 if (!OPENAI_API_KEY) {
